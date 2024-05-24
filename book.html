@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group-8</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header class="navigation" role="banner">
+        <div class="navigation-wrapper">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Image">
+            </a>
+            <a class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+            <nav role="navigation">
+                <ul id="js-navigation-menu" class="navigation-menu show">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="about.html">About</a></li>
+                    <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-link"><a href="deal.html">Deal</a></li>
+                    <li class="nav-link"><a href="book.html">Book</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    <li class="nav-link"><a href="login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking">
+            <h1>Book Your Trip</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Check-in Date</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" name="adults" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" name="children" min="0" required>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="Newsletter.html" class="btn">Newsletter</a>
+        <p>Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
+        <ul class="contact-info">
+            <li><i class="fa fa-map-marker"></i>23, Alice Street, Wileypark, NSW-2195</li>
+            <li><i class="fa fa-phone"></i>000000000</li>
+        </ul>
+        <div class="social-links">
+            <a class="rss" href="#"><i class="fa fa-rss fa-lg"></i></a>
+            <a class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+            <a class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+            <a class="dribbble"><i class="fa fa-dribbble fa-lg"></i></a>
+            <a class="pinterest"><i class="fa fa-pinterest fa-lg"></i></a>
+        </div>
+    </section>
+  
+    <footer>
+        <p>Made by Souria Marano, IDs366411<p>
+    </footer>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    </body>
+</html>

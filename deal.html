@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group-8</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header class="navigation" role="banner">
+        <div class="navigation-wrapper">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Image">
+            </a>
+            <a class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+            <nav role="navigation">
+                <ul id="js-navigation-menu" class="navigation-menu show">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="about.html">About</a></li>
+                    <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-link"><a href="deal.html">Deal</a></li>
+                    <li class="nav-link"><a href="book.html">Book</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    <li class="nav-link"><a href="login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="deals"><h1>Choose Your Destinations</h1></div>
+
+    <!-- The grid: four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="images/ulu.jpg" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/snow1.jpg" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/mountain_snow.jpg" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/victoria.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+    </div>
+  
+    <!-- The expanding image container -->
+    <div class="deal_container">
+    <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+
+    <main>
+        <section class="deals">
+            <h1>Special Deals</h1>
+            <div class="deal-grid">
+                <div class="deal">
+                    <img src="images/beach.jpg" alt="Deal 1">
+                    <div class="deal-info">
+                        <h2>Beach Getaway</h2>
+                        <p>Enjoy a relaxing week at a beachfront resort with a 30% discount.</p>
+                        <p>Beach View Hotel</p>
+                        <p>3 nights:2000USD Only</p>
+                        <a href="book.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="images/mountain.jpg" alt="Deal 2">
+                    <div class="deal-info">
+                        <h2>Mountain Adventure</h2>
+                        <p>Experience the thrill of the mountains with guided tours at 20% off.</p>
+                        <p>Mountain View Hotel</p>
+                        <p>3 nights:3000USD Only</p>
+                        <a href="book.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="images/city.jpg" alt="Deal 3">
+                    <div class="deal-info">
+                        <h2>City Break</h2>
+                        <p>Explore the city's top attractions with a special 25% discount on packages.</p>
+                        <p>Restaurants with many Cuisine</p>
+                        <p>hot deals and kids friendly</p>
+                        <a href="book.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                    <div class="deal">
+                    <img src="images/queensland.jpg" alt="Deal 4">
+                    <div class="deal-info">
+                        <h2>Regional Beauty</h2>
+                        <p>Explore the regional calmness with a special 25% discount on packages.</p>
+                        <p>County view with nature</p>
+                        <p>Visit with reasonable price</p>
+                        <a href="book.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="Newsletter.html" class="btn">Newsletter</a>
+        <p>Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
+        <ul class="contact-info">
+            <li><i class="fa fa-map-marker"></i>23, Alice Street, Wileypark, NSW-2195</li>
+            <li><i class="fa fa-phone"></i>000000000</li>
+        </ul>
+        <div class="social-links">
+            <a class="rss" href="#"><i class="fa fa-rss fa-lg"></i></a>
+            <a class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+            <a class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+            <a class="dribbble"><i class="fa fa-dribbble fa-lg"></i></a>
+            <a class="pinterest"><i class="fa fa-pinterest fa-lg"></i></a>
+        </div>
+    </section>
+  
+    <footer>
+        <p>Made by Souria Marano, IDs366411<p>
+    </footer>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    </body>
+  </html>
